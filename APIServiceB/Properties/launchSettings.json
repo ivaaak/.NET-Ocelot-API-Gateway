@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "APIServiceB": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:63392;http://localhost:63393"
+    }
+  }
+}
