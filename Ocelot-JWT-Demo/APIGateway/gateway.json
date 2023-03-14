@@ -1,0 +1,84 @@
+﻿{
+  "Routes": [
+  {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9002
+        }
+      ],
+      "UpstreamPathTemplate": "/{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": []
+      }
+    },
+	// The above route does the same as the ones commented out below.
+    //{
+    //  "DownstreamPathTemplate": "/api/customers",
+    //  "DownstreamScheme": "http",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 9002
+    //    }
+    //  ],
+    //  "UpstreamPathTemplate": "/customers",
+    //  "UpstreamHttpMethod": [ "Get" ],
+    //  "AuthenticationOptions": {
+    //    "AuthenticationProviderKey": "TestKey",
+    //    "AllowedScopes": []
+    //  }
+    //},
+    //{
+    //  "DownstreamPathTemplate": "/api/customers/{id}",
+    //  "DownstreamScheme": "http",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 9002
+    //    }
+    //  ],
+    //  "UpstreamPathTemplate": "/customers/{id}",
+    //  "UpstreamHttpMethod": [ "Get" ]
+    //}
+    
+    // Auth Server demo endpoint
+    {
+      "DownstreamPathTemplate": "/api/demo",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9001
+        }
+      ],
+      "UpstreamPathTemplate": "/demo",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/demo/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9001
+        }
+      ],
+      "UpstreamPathTemplate": "/demo/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:9000",
+    "RequestIdKey": "OcRequestId",
+    "AdministrationPath": "/administration"
+  }
+}
