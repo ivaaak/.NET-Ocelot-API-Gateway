@@ -1,3 +1,4 @@
+/*
 using APIGatewayBasic;
 using Ocelot.JwtAuthorize;
 using Ocelot.Middleware;
@@ -29,3 +30,4 @@ app.UseHttpsRedirection();
 app.MapControllers();
 
 app.Run();
+*/
