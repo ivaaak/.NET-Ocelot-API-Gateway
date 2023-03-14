@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "ProductsAPIServices": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://*:9002"
+    }
+  }
+}

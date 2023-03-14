@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "CustomersAPIServices": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://*:9001"
+    }
+  }
+}
